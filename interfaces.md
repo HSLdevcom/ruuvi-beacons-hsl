@@ -9,21 +9,24 @@ The NUS is described in [Nordic Infocenter]http://infocenter.nordicsemi.com/topi
 Only iBeacon transmissions are configurable.
 
 ### Buttonless DFU Service
-Buttonless DFU service is used to put tag into bootloader mode. 
+Buttonless DFU service is used to put tag into bootloader mode. Please see [Nordic's specification](https://infocenter.nordicsemi.com/topic/com.nordic.infocenter.sdk5.v14.2.0/group__ble__dfu.html?cp=4_0_0_6_3_8) for details of the service. 
+
+Sample code for entering DFU mode with [Android](https://github.com/NordicSemiconductor/Android-nRF-Connect) is available at Nordic's GitHub.
+iOS version of nRF Connect might not support the buttonless DFU. 
 
 ### DIS Service
 Device Information Service provides read-only access to
 device information, such as hardware model, software revision and manufacturer. DIS is a [Bluetooth SIG standard](https://www.bluetooth.com/specifications/gatt/viewer?attributeXmlFile=org.bluetooth.service.device_information.xml).
 
 ### DFU service
-DFU service is available only in the bootloader mode. The DFU service allows uploading a new firmware to the tag. 
+DFU service is available only in the bootloader mode. The DFU service allows uploading a new firmware to the tag.
+Source code for [Android](https://github.com/NordicSemiconductor/Android-DFU-Library) and [iOS](https://github.com/NordicSemiconductor/IOS-Pods-DFU-Library) to enter upload packages via DFU is available at Nordic's GitHub.
 
 ### Security
-A passcode must be entered via NUS service before configuring the device? 
+A passcode must be entered via NUS service before configuring the device? TODO: Discuss.
 
 ## Advertisement formats
 ### iBeacon
-
 The tags are identified with iBeacon data format as described in [Apple's developer documentation](https://developer.apple.com/ibeacon/Getting-Started-with-iBeacon.pdf)
 
 The sensor is in connectable and discoverable mode for configuration and firmware updating. 
@@ -45,4 +48,4 @@ Settings are stored to flash and loaded on boot. This allows setup to survive po
 battery change. 
 
 # Task status
-Please follow Issues on this repository to track proggress.
+Please follow issues on this repository to track progress.
