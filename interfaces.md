@@ -40,5 +40,9 @@ Transmission power is same as with iBeacon format, transmission interval is TBD.
 The tags will ship without a plastic cover in the battery, in deep sleep. NFC field will activate the tag. 
 The tag will transmit it's ID via NFC upon activation.
 
+# Flash storage
+Settings are stored to flash and loaded on boot. This allows setup to survive possible power distruption caused by shock or
+battery change. 
+
 # Task status
-Please request access to Ruuvi's Monday board to follow the progress. Contact otso@ruuvi.com
+Please follow Issues on this repository to track proggress.
