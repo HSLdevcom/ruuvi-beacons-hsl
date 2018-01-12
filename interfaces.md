@@ -1,5 +1,9 @@
 # BLE Interfaces
-The usual mode of operation of beacons is "connectable beacon". The beacons broadcast their advertisement data 
+The usual mode of operation of beacons is "connectable beacon". The beacons broadcast their advertisement data for everyone,
+and generally users don't have to connect to the beacon. 
+
+BLE GATT connection is formed for configuration of the beacons. While anyone can connect to the beacon and read basic information
+such as hardware and firmware version and serial number, configuring is protected with a passcode.
 
 ## Connectable GATT profile
 ### Configuration service
