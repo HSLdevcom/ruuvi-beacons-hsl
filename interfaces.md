@@ -4,7 +4,7 @@ The usual mode of operation of beacons is "connectable beacon". The beacons broa
 ## Connectable GATT profile
 ### Configuration service
 Configuring the beacon is done via Nordic UART Service, NUS.
-The NUS is described in [Nordic Infocenter]http://infocenter.nordicsemi.com/topic/com.nordic.infocenter.sdk5.v12.3.0/structble__nus__c__s.html?resultof=%22%6e%75%73%22%20%22%6e%75%22%20). 
+The NUS is described in [Nordic Infocenter](http://infocenter.nordicsemi.com/topic/com.nordic.infocenter.sdk5.v12.3.0/structble__nus__c__s.html?resultof=%22%6e%75%73%22%20%22%6e%75%22%20). 
 
 Only iBeacon transmissions are configurable.
 
